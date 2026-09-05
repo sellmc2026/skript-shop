@@ -149,9 +149,11 @@
         .orderButton {
             position: absolute;
         
-            left: 50%;
+            left: 0;
+            right: 0;
             top: 250px;
-            transform: translateX(-50%);
+        
+            margin: auto;
         
             width: 200px;
             padding: 13px;
@@ -167,7 +169,7 @@
         }
         
         .orderButton:hover {
-            transform: translateX(-50%) translateY(-4px);
+            transform: translateY(-4px);
         
             box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
             background-color: #aaaaaa;
