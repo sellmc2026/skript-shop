@@ -1,2 +1,6 @@
-orderButton.addEventListener {
-  console.log("This works")
+orderButton.addEventListener(
+    "click",
+    () => {
+        console.log("This works")
+    }
+  );
