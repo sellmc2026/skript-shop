@@ -9,7 +9,8 @@
     >
 
     <link rel="icon" type="image/png" href="favicon.png">
-    <script src="script.js"></script>
+
+    <script src="script.js" defer></script>
 
     <title>Skript Shop</title>
 
@@ -34,10 +35,8 @@
             box-sizing: border-box;
         }
 
-
         html,
         body {
-
             margin: 0;
             padding: 0;
 
@@ -48,12 +47,9 @@
             color: #ffffff;
 
             font-family: Arial, sans-serif;
-
         }
 
-
         body {
-
             min-height: 100vh;
 
             display: flex;
@@ -62,24 +58,20 @@
             justify-content: center;
 
             overflow: auto;
-
         }
 
-      /* ========================================
-        MAIN DASHBOARD
-        ======================================== */
+        /* ========================================
+           MAIN DASHBOARD
+           ======================================== */
 
         #dashboard {
-
             position: relative;
 
             flex-shrink: 0;
 
             width: 860px;
             height: 620px;
-
         }
-
 
         #logo {
             position: absolute;
@@ -93,8 +85,6 @@
             transform: translateX(-50%);
         
             object-fit: contain;
-
-            
         }
         
         #title {
@@ -123,13 +113,11 @@
             font-family: "Mojangles-Bold", sans-serif;
         }
 
-
         /* ========================================
            PROFILE / TOP BUTTONS
            ======================================== */
 
         #topButtons {
-
             position: absolute;
 
             left: 668px;
@@ -144,7 +132,6 @@
             justify-content: flex-end;
 
             gap: 5px;
-
         }
 
         .orderButton {
@@ -181,49 +168,35 @@
         .orderButton:active {
             background-color: #ffffff;
             color: #000000;
-            box-shadow: 0 5px 8px rgba(0, 123, 255, 0.2)
+            box-shadow: 0 5px 8px rgba(0, 123, 255, 0.2);
         }
-        
 
     </style>
 
-</head>
+  </head>
 
+  <body>
 
-<body>
+    <div id="dashboard">
 
+        <img
+            id="logo"
+            src="logo.png"
+            alt="Skript Shop"
+        >
 
-<div id="dashboard">
+        <h1 id="title">
+            Skript Shop
+        </h1>
 
+        <button
+            class="orderButton"
+            id="orderButton"
+        >
+            Order Skript
+        </button>
 
+    </div>
 
-
-      <img
-        id="logo"
-        src="logo.png"
-        alt="Skript Shop"
-    >
-
-
-
-    <h1 id="title">
-        Skript Shop
-    </h1>
-
-    
-    <button
-        class="orderButton"
-        id="orderButton"
-    >
-
-        Order Skript
-
-    </button>
-
-    
-    <script>
-
-    </script>
-    
   </body>
-  
+</html>
